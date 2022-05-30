@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/index.css">
+  <title>Сycling trips</title>
+</head>
+<body class="body">
+  <div class="page">
+    <header class="header">
+      <ul class="header__menu">
+        <li class="header__item"><a href="#highway" class="header__link">Покрытия и градиенты</a></li>
+        <li class="header__item"><a href="#bikes" class="header__link">Велосипеды</a></li>
+        <li class="header__item"><a href="#workout" class="header__link">Тренировки</a></li>
+      </ul>
+    </header>
+  <div class="main">
+    <section class="content">
+      <div class="content__descpiption">
+        <h2 class="content__header">Шоссе, ТТ и&nbsp;Грэвел</h2>
+        <p class="content__text">Триатлонные старты, горные серпантины или грейвел заезды по живописным маршрутам –
+          нужно только определиться с выбором велосипеда и отправиться в путь.</p>
+        <button type="button" class="content__button">Подробнее</button>
+        <p class="content__bike-name">Cannondale Systemsix</p>
+        <hr class="content__line">
+      </div>
+      <img src="./images/Placeholder.png" alt="Природа лесных гор" class="content__image">
+    </section>
+    <section class="merx">
+      <img src="./images/merx-image.png" alt="Туман над горами" class="merx__image">
+      <div class="merx__content">
+        <h2 class="merx__title">«Катайся много или мало, долго или коротко, как хочешь - но катайся»</h2>
+        <p class="merx__author">Эдди Меркс</p>
+        <p class="merx__hobbies">Велогонщик</p>
+      </div>
+    </section>
+    <section class="highway" id="highway">
+      <template id="highway-template">
+        <div class="highway__content">
+          <h2 class="content__header" id="highway-title"></h2>
+          <p class="content__text"></p>
+        </div>
+        <div class="highway__gallery">
+          <img alt="Велосипедная дорожка" class="highway__image" id="highway-image-1">
+          <img alt="Велосипедная дорожка" class="highway__image" id="highway-image-2">
+        </div>
+        <div class="highway__navigation">
+          <button type="button" class="highway__button" id="highwayButtonLeft"></button>
+          <button type="button" class="highway__button" id="highwayButtonRight"></button>
+        </div>
+      </template>
+    </section>
+    <section class="bikes" id="bikes">
+      <div class="bikes__header">
+        <h2 class="content__header">Велосипеды</h2>
+        <ul class="bikes__links">
+          <li class="bikes__link bikes__link_bold">Шоссе</li>
+          <li class="bikes__link">Грэвел</li>
+          <li class="bikes__link">ТТ</li>
+        </ul>
+      </div>
+      <div class="bikes__types">
+        <template id="bikes-template">
+          <div class="bikes__tipe">
+            <div class="bikes__border">
+              <img src="./images/bike-1.png" alt="Велосипед" class="bikes__image">
+            </div>
+            <p class="bikes__name">Cervelo Caledonia-5</p>
+          </div>
+        </template>
+        <!-- <div class="bikes__tipe">
+          <div class="bikes__border">
+            <img src="./images/bike-2.png" alt="Велосипед" class="bikes__image">
+          </div>
+          <p class="bikes__name">Cannondale Systemsix Himod</p>
+        </div>
+        <div class="bikes__tipe">
+          <div class="bikes__border">
+            <img src="./images/bike-3.png" alt="Велосипед" class="bikes__image">
+          </div>
+          <p class="bikes__name">Trek Domane SL-7</p>
+        </div> -->
+      </div>
+    </section>
+    <section class="workout" id="workout">
+      <div class="content__descpiption content__descpiption_workout">
+        <h2 class="content__header">Тренировки</h2>
+        <p class="content__text">Чтобы найти маршрут для тренировки можно воспользоваться сервисом Komoot,
+          а записать эти тренировки поможет приложение Strava, а также это&nbsp;приложение позволит построить тренировочный&nbsp;план.</p>
+        <div class="workout__places">
+          <p class="workout__place">Strava</p>
+          <p class="workout__place">Komoot</p>
+        </div>
+      </div>
+      <img src="./images/workout-road.png" alt="Холмистая дорога" class="workout__image">
+    </section>
+  </div>
+    <footer class="footer">
+      <div class="footer__content">
+        <h3 class="footer__title">Подпишитесь на рассылку —</h3>
+        <input type="text" placeholder="Ваш e-mail" class="footer__email">
+        <p class="footer__club-name">&copy; Road Club 2021</p>
+      </div>
+      <label class="footer__theme">
+        <input type="checkbox">
+        <span class="footer__theme-switch"></span>
+      </label>
+    </footer>
+  </div>
+  <script src="./script/script.js"></script>
+</body>
+</html>
